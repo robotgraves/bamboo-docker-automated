@@ -11,6 +11,8 @@ Docker Image and Python script to automagically start a Bamboo instance inside D
 
 # How-To
 
+0) Install the virtual environment
+    * ansible-playbook devenv-playbook.yml
 1) Build the docker image for bamboo
     * docker build bamboo/. -t bamboo
 2) Run the Docker Container
