@@ -1,0 +1,15 @@
+- hosts: localhost
+  connection: local
+  sudo: yes
+  tasks:
+#  - name: Apt-Get installs
+#    apt:
+#      name: libcurl4-openssl-dev
+#      update_cache: yes
+
+
+  - pip: requirements={{ playbook_dir }}/{{ item }}
+         virtualenv={{ playbook_dir }}/v
+         extra_args="--trusted-host 192.168.254.81"
+    with_items:
+    - requirements-cpython.txt
