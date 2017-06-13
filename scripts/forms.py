@@ -113,7 +113,7 @@ license_payload = {
 
 config_payload = {
     'instanceName': 'Atlassian+Bamboo',
-    'baseUrl': 'http://localhost:8085',
+    'baseUrl': 'http://192.168.253.52:8085',
     'configDir': '/var/atlassian-home/xml-data/configuration',
     'buildDir': '/var/atlassian-home/xml-data/builds',
     'buildWorkingDir': '/var/atlassian-home/xml-data/build-dir',
