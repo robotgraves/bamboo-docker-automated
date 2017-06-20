@@ -11,16 +11,20 @@ Docker Image and Python script to automagically start a Bamboo instance inside D
 
 # How-To
 
-0) Install the virtual environment
+1) Run quickstart.sh
+
+OR
+
+1) Install the virtual environment
     * ansible-playbook devenv-playbook.yml
-1) Build the docker image for bamboo
+2) Build the docker image for bamboo
     * docker build bamboo/. -t bamboo
-2) Run the Docker Container
+3) Run the Docker Container
     * docker run --name bamboo -e CONTEXT_PATH=ROOT -p 8085:8085 bamboo
-3) Place your bamboo key next to the script file
+4) Place your bamboo key next to the script file
     * file name should be "bambookey_modified"
     * Make sure it is in the proper format, there are some formatting issues with this file.  There should be slashes in the key itself
-4) Run the script
+5) Run the script
     * v/bin/python scripts/forms.py
     * you should see a number of print lines while it is working, expect to see
         * waiting for response

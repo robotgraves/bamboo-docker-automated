@@ -93,6 +93,9 @@ class LicenseIDParser(HTMLParser):
 """
 SETTING DATA
 """
+
+time.sleep(10)
+
 z = file('/home/vagrant/PycharmProjects/bamboo/bamboo/bambookey_modified').read()
 
 headers = {
